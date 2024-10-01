@@ -7,3 +7,87 @@
   justify-content: center;
   align-items: center;
 }
+
+.projectsContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.projectsContent>div {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: .5px solid var(--grey);
+  position: relative;
+}
+
+.projectsContent div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: var(--grey);
+  /* Adjust the color as needed */
+  transform: translateX(-50%);
+  /* Center the line */
+  z-index: -1;
+}
+
+.project {
+  width: 300px;
+  height: auto;
+  background: var(--black);
+  border-radius: 20px;
+  border: .5px solid var(--grey);
+  margin: 20px;
+  background-color: var(--grey-background);
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.projectURL{
+  display: flex;
+  align-items: center;
+}
+
+.projectURL>a {
+  font-size: .85rem;
+  margin-left: 15px;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+  /* Space between buttons */
+  padding: 10px;
+}
+
+.window-controls div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff5f57;
+  /* Default color for close button */
+  cursor: pointer;
+}
+
+.window-controls .minimize {
+  background-color: #ffbd2e;
+  /* Color for minimize button */
+}
+
+.window-controls .maximize {
+  background-color: #28c940;
+  /* Color for maximize button */
+}
