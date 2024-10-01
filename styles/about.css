@@ -35,7 +35,7 @@
 
 .professionalDisplay {
   width: 80%;
-  height: 200px;
+  height: 300px;
   position: relative;
   /* Ensure the pseudo-element is positioned relative to this element */
   display: flex;
@@ -71,6 +71,12 @@
   flex-direction: column;
   align-items: center;
   border-right: .5px solid var(--grey);
+}
+
+.displayLeft img {
+  width: 40px;
+  height: auto;
+  margin: 5px;
 }
 
 .displayRight {
