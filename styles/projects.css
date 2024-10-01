@@ -1,0 +1,9 @@
+#projects {
+  margin: 20px 0;
+  border-top: .5px solid var(--grey);
+  border-bottom: .5px solid var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

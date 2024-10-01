@@ -1,0 +1,81 @@
+#about {
+  border-top: .5px solid var(--grey);
+  border-bottom: .5px solid var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.aboutPersonal {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: .5px solid var(--grey);
+  border-top: .5px solid var(--grey);
+}
+
+.aboutProfessional {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: .5px solid var(--grey);
+}
+
+.professionalDisplay {
+  width: 80%;
+  height: 200px;
+  position: relative;
+  /* Ensure the pseudo-element is positioned relative to this element */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--grey-background), var(--grey-background), black);
+  border: none;
+  /* Remove the original border */
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.professionalDisplay::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  border: .5px solid var(--blue);
+  background: linear-gradient(to bottom, var(--grey-background), var(--grey-background), black);
+  -webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  z-index: -1;
+}
+
+.displayLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: .5px solid var(--grey);
+}
+
+.displayRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}

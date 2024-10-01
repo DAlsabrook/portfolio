@@ -4,32 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>David Alsabrook | Full Stack Developer</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Css Files -->
+  <link href="./styles/global.css" rel="stylesheet">
+  <link href="./styles/header.css" rel="stylesheet">
+  <link href="./styles/hero.css" rel="stylesheet">
+  <link href="./styles/about.css" rel="stylesheet">
+  <link href="./styles/projects.css" rel="stylesheet">
+  <link href="./styles/resume.css" rel="stylesheet">
+  <link href="./styles/footer.css" rel="stylesheet">
+  <link href="./styles/hover.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
+    <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
-      <div class="logo"><a href="" class="logoLink">David Alsabrook</a></div>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-      </ul>
+      <div class="headerContent">
+        <div class="logo"><a href="#" class="logoLink">David Alsabrook</a></div>
+        <ul class="navMenu">
+          <li><a href="#about" class="hvr-underline-from-center">About</a></li>
+          <li><a href="#projects"class="hvr-underline-from-center">Projects</a></li>
+          <li><a href="#resume"class="hvr-underline-from-center">Resume</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <body>
+    <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
+      <div class="bodyContent">
 
+        <section id="hero">
+          <div class="heroText">
+            <h1>David Alsabrook</h1>
+            <p>Full Stack Web Development</p>
+          </div>
+          <img src="./assets/headshot transparent.png" alt="">
+        </section>
+
+        <section id="about">
+          <h2>About Me</h2>
+          <div class="aboutContent">
+            <div class="aboutPersonal">
+              <!-- Put little "personal" icon here -->
+              <h3>Personal</h3>
+            </div>
+            <div class="aboutProfessional">
+              <!-- Put little "professional" icon here -->
+              <h3>Professional</h3>
+              <p><b>Making the connection between front-end and back-end</b> is what sparks my interest.</p>
+              <div class="professionalDisplay">
+                <div class="displayLeft">
+                  <h4>Front End</h4>
+                  <!-- Front end icons -->
+                </div>
+                <div class="displayRight">
+                  <h4>Back End</h4>
+                  <!-- Back end icons here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+        </section>
+
+        <section id="resume">
+          <h2>Resume</h2>
+        </section>
+      </div>
     </div>
   </body>
 
   <footer>
+    <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
-      
+      <div class="footerContent"></div>
     </div>
   </footer>
   <!-- Bootstrap JavaScript Bundle with Popper -->

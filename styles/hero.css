@@ -1,0 +1,25 @@
+#hero {
+  /* border: 1px solid red; */
+  /* background: url('../assets/pure-black-background.jpg');
+  background-repeat: no-repeat; */
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.heroText{
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero img {
+  height: 300px;
+  width: auto;
+  opacity: .5;
+  align-self: flex-end;
+}

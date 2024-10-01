@@ -1,0 +1,62 @@
+:root {
+  --black: black;
+  --blue: rgb(65, 109, 254);
+  --red: rgb(252, 63, 21);
+  --green: rgb(68, 169, 105);
+  --yellow: yellow;
+  --grey: rgb(30, 30, 30);
+  --grey-background: rgb(8, 8, 8);
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--black);
+  color: white;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.contentWrapper {
+  max-width: 1100px;
+  margin: 0 2%;
+  border: 1px solid var(--grey);
+}
+
+body {
+  background: url('../assets/pure-black-background.jpg');
+  background-repeat: no-repeat;
+}
