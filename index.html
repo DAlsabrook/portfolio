@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Alsabrook | Full Stack Developer</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/logo.ico">
   <!-- Include Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <!-- Css Files -->
   <link href="./styles/global.css" rel="stylesheet">
   <link href="./styles/header.css" rel="stylesheet">
@@ -25,7 +24,7 @@
     <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
       <div class="headerContent">
-        <div class="logo"><a href="#" class="logoLink">David Alsabrook</a></div>
+        <div class="logo"><a href="#" class="logoLink"><img src="./assets/logo.png" alt=""></a></div>
         <ul class="navMenu">
           <li><a href="#about" class="hvr-underline-from-center">About</a></li>
           <li><a href="#projects"class="hvr-underline-from-center">Projects</a></li>
@@ -56,7 +55,6 @@
           <div class="aboutContent">
             <div class="aboutPersonal">
               <!-- Put little "personal" icon here -->
-              <h3>Who am I...</h3>
               <div class="headshotWrapper"><img src="./assets/headshots/headshot.jpeg" alt=""></div>
               <p>I'm David Alsabrook, a husband, father of four, and a driven professional who loves setting goals and going beyond
               expectations. I’m currently working on AI Curb Appeal, exploring AI integration to bring new ideas to life. My journey
@@ -65,7 +63,7 @@
             </div>
             <div class="aboutProfessional">
               <!-- Put little "professional" icon here -->
-              <p><b>Making the connection between front-end and back-end</b> is what sparks my interest.</p>
+              <p><b>Connecting the Front and Back:</b><br> Tools That Power My Projects</p>
               <div class="professionalDisplay">
                 <div class="displayLeft">
                   <h4>Front End</h4>
@@ -131,7 +129,7 @@
                     <div class="minimize"></div>
                     <div class="maximize"></div>
                   </div>
-                  <a href="https://www.tubroswindows.com" target="_blank" rel="noopener noreferrer">www.TuBrosWindows.com &nbsp;&nbsp; <i class="fas fa-link"></i></a>
+                  <a href="https://www.davidalsabrook.com" target="_blank" rel="noopener noreferrer">www.DavidAlsabrook.com &nbsp;&nbsp; <i class="fas fa-link"></i></a>
                 </div>
               </div>
             </div>
@@ -139,7 +137,80 @@
         </section>
 
         <section id="resume">
-          <h2>Resume</h2>
+          <div class="education">
+            <h2>Education</h2>
+
+            <div class="resumeItem">
+              <img src="./assets/dot.png" alt="" class="dot">
+              <div class="resumeItemText">
+                <h3>Atlas School</h3>
+                <p><em>Diploma of Computer Science and Full Stack Development</em></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="work">
+            <h2>Work Experience</h2>
+
+            <div class="resumeItem">
+              <img src="./assets/dot.png" alt="" class="dot">
+              <div class="resumeItemText">
+                <h3>Freelance</h3>
+                <div class="resumeItemTextDetail">
+                  <img src="./assets/dot.png" alt="" class="dot">
+                  <div class="resumeItemTextDetailText">
+                    <p><em>Full Stack Development</em></p>
+                    <p>As a freelance web developer, I am currently working on building and optimizing front-end websites for small local
+                    businesses. My ongoing projects include creating user-friendly websites for several clients, helping them establish a
+                    strong online presence, improve customer engagement, and show their quality of work. A key focus is implementing
+                    effective SEO strategies to ensure higher visibility and better search engine rankings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="resumeItem">
+              <img src="./assets/dot.png" alt="" class="dot">
+              <div class="resumeItemText">
+                <h3>K & K Brookside</h3>
+
+                <div class="resumeItemTextDetail">
+                  <img src="./assets/dot.png" alt="" class="dot">
+                  <div class="resumeItemTextDetailText">
+                    <p><em>Business Manager</em></p>
+                    <p>As Business Manager I embraced new responsibilities that included overseeing budgeting, forecasting, and financial
+                    planning. I ensured our cash flow stayed healthy and managed accounts receivable/payable and financial reporting.</p>
+                  </div>
+                </div>
+
+                <div class="resumeItemTextDetail">
+                  <img src="./assets/dot.png" alt="" class="dot">
+                  <div class="resumeItemTextDetailText">
+                    <p><em>General Manager</em></p>
+                    <p>Stepping up to General Manager, I oversaw multiple teams, successfully implemented a new POS, and added an inventory
+                    system which made a drastic change in the business's financial outlook. I also took charge of our social media strategy,
+                    optimizing marketing efforts to enhance customer acquisition. Additionally, I increased our website's SEO, significantly
+                    boosting our online presence and engagement using lighthouse metrics to get our page as the top search for many
+                    keywords.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="resumeItemTextDetail">
+                  <img src="./assets/dot.png" alt="" class="dot">
+                  <div class="resumeItemTextDetailText">
+                    <p><em>Bar Manager</em></p>
+                    <p>My main accomplishments with this role included inventory management and control, optimizing stock levels, reducing
+                    waste, and ensuring cost efficiency. I developed skills in ordering, tracking inventory, and implementing systems for
+                    accurate record-keeping and reordering.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -148,11 +219,19 @@
   <footer>
     <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
-      <div class="footerContent"></div>
+      <div class="footerContent">
+        <a href="https://github.com/DAlsabrook" target="_blank" rel="noopener noreferrer" class="footerIcon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/david-alsabrook/" target="_blank" rel="noopener noreferrer" class="footerIcon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/David_Alsabrook" target="_blank" rel="noopener noreferrer" class="footerIcon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
     </div>
   </footer>
-  <!-- Bootstrap JavaScript Bundle with Popper -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

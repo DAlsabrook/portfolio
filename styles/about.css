@@ -52,7 +52,7 @@
   filter: blur(70px);
   background: conic-gradient(orange, purple, blue, purple, orange);
 
-  animation: spin 12s linear infinite;
+  animation: spin 8s linear infinite;
   z-index: -1;
 }
 
@@ -75,6 +75,7 @@
   justify-content: space-around;
   align-items: center;
   border-top: .5px solid var(--grey);
+  text-align: center;
 }
 
 .professionalDisplay {
