@@ -1,10 +1,9 @@
 #hero {
-  /* border: 1px solid red; */
-  /* background: url('../assets/pure-black-background.jpg');
-  background-repeat: no-repeat; */
   height: 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heroText{
@@ -21,5 +20,4 @@
   height: 300px;
   width: auto;
   opacity: .5;
-  align-self: flex-end;
 }
