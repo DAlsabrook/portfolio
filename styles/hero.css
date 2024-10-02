@@ -84,8 +84,7 @@
 .heroLogosTop div,
 .heroLogosBottom div {
   opacity: 0;
-  transform: translate(0, 0);
-  transition: opacity 6s ease, transform 1s ease;
+  transition: opacity 3s ease, transform 1.8s ease;
 }
 
 /* Animation state for the logos */
@@ -98,11 +97,11 @@
 
 /* Top */
 .heroLogosTop .js.animate {
-  transform: translate(-80%, 125%);
+  transform: translate(158%, -170%);
 }
 
 .heroLogosTop .css.animate {
-  transform: translate(-180%, -30%);
+  transform: translate(218%, -170%);
 }
 
 .heroLogosTop .python.animate {
@@ -122,37 +121,37 @@
 }
 
 .heroLogosTop .docker.animate {
-  transform: translate(120%, -30%);
+  transform: translate(-115%, -170%);
 }
 
 /* Bottom */
 
 .heroLogosBottom .next.animate {
-  transform: translate(-80%, 80%);
+  transform: translate(160%, 200%);
 }
 
 .heroLogosBottom .react.animate {
-  transform: translate(-20%, 80%);
+  transform: translate(-20%, 60%);
 }
 
 .heroLogosBottom .firebase.animate {
-  transform: translate(40%, 80%);
+  transform: translate(40%, 60%);
 }
 
 .heroLogosBottom .flask.animate {
-  transform: translate(100%, 80%);
+  transform: translate(100%, 60%);
 }
 
 .heroLogosBottom .github.animate {
-  transform: translate(160%, 80%);
+  transform: translate(160%, 60%);
 }
 
 .heroLogosBottom .mysql.animate {
-  transform: translate(220%, 80%);
+  transform: translate(-180%, 200%);
 }
 
 .heroLogosBottom .bootstrap.animate {
-  transform: translate(120%, -90%);
+  transform: translate(-118%, 200%);
 }
 
 
@@ -213,8 +212,8 @@
   left: -27%;
   right: 0;
   bottom: 0;
-  width: 120%;
-  height: 120%;
+  width: 110%;
+  height: 110%;
   border-radius: 50%;
   z-index: -1;
   filter: blur(2px);

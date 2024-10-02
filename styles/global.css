@@ -24,6 +24,7 @@ body {
   color: white;
   position: relative;
   z-index: -2;
+  scroll-behavior: smooth;
 }
 
 body {
