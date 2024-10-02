@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Shows hero section text
   setTimeout(() => {
     document.querySelector('.heroTextWrapper').classList.add('reveal');
-  }, 1000); // Adjust delay as needed
-});
-document.addEventListener('DOMContentLoaded', () => {
+  }, 1000);
+
+  // Sets animations for hero tech logos
   setTimeout(() => {
     const topLogos = document.querySelectorAll('.heroLogosTop div');
     const bottomLogos = document.querySelectorAll('.heroLogosBottom div');
 
     topLogos.forEach(logo => logo.classList.add('animate'));
     bottomLogos.forEach(logo => logo.classList.add('animate'));
-  }, 3000); // 1 second delay
+  }, 3000);
 });

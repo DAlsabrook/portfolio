@@ -1,5 +1,5 @@
 #hero {
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,6 +217,7 @@
   height: 120%;
   border-radius: 50%;
   z-index: -1;
+  filter: blur(2px);
 }
 
 .js::before {
