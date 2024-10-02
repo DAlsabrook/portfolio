@@ -1,5 +1,5 @@
 #hero {
-  height: 500px;
+  height: 540px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,9 +14,9 @@
 }
 
 .heroText{
-  height: 120px;
+  height: 130px;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
