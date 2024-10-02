@@ -42,15 +42,15 @@
 .headshotWrapper::after {
   content: '';
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 50px;
   right: 0;
   bottom: 0;
   width: 60%;
   height: 60%;
   border-radius: 50%;
-  filter: blur(50px);
-  background: conic-gradient(orange, purple, blue, purple, orange);
+  filter: blur(40px);
+  background: conic-gradient(transparent, transparent, transparent, transparent, white 80%);
 
   animation: spin 8s linear infinite;
   z-index: -1;
