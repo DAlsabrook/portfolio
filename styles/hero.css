@@ -13,10 +13,6 @@
   justify-content: space-around;
 }
 
-.heroLogosTop>img {
-  width: 40px;
-}
-
 .heroText{
   height: 100%;
   width: 100%;
@@ -79,4 +75,241 @@
 
 .heroTextWrapper.reveal::after {
   transform: translateY(100%);
+}
+
+
+
+/* Little logos */
+/* Initial state for the logos */
+.heroLogosTop div,
+.heroLogosBottom div {
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: opacity 6s ease, transform 1s ease;
+}
+
+/* Animation state for the logos */
+.heroLogosTop div.animate,
+.heroLogosBottom div.animate {
+  opacity: 1;
+}
+
+/* Specific animations for each logo */
+
+/* Top */
+.heroLogosTop .js.animate {
+  transform: translate(-80%, 125%);
+}
+
+.heroLogosTop .css.animate {
+  transform: translate(-180%, -30%);
+}
+
+.heroLogosTop .python.animate {
+  transform: translate(-120%, -30%);
+}
+
+.heroLogosTop .c.animate {
+  transform: translate(-60%, -30%);
+}
+
+.heroLogosTop .html.animate {
+  transform: translate(0%, -30%);
+}
+
+.heroLogosTop .jquery.animate {
+  transform: translate(70%, -30%);
+}
+
+.heroLogosTop .docker.animate {
+  transform: translate(120%, -30%);
+}
+
+/* Bottom */
+
+.heroLogosBottom .next.animate {
+  transform: translate(-80%, 80%);
+}
+
+.heroLogosBottom .react.animate {
+  transform: translate(-20%, 80%);
+}
+
+.heroLogosBottom .firebase.animate {
+  transform: translate(40%, 80%);
+}
+
+.heroLogosBottom .flask.animate {
+  transform: translate(100%, 80%);
+}
+
+.heroLogosBottom .github.animate {
+  transform: translate(160%, 80%);
+}
+
+.heroLogosBottom .mysql.animate {
+  transform: translate(220%, 80%);
+}
+
+.heroLogosBottom .bootstrap.animate {
+  transform: translate(120%, -90%);
+}
+
+
+#js,
+#css,
+#python,
+#c,
+#html,
+#jquery,
+#docker,
+#bootstrap,
+#next,
+#react,
+#firebase,
+#flask,
+#github,
+#mysql {
+  width: 40px;
+}
+
+.js,
+.css,
+.python,
+.c,
+.html,
+.jquery,
+.docker,
+.bootstrap,
+.next,
+.react,
+.firebase,
+.flask,
+.github,
+.mysql {
+  width: 60px;
+  height: 60px;
+  position: relative;
+    /* animation: float 3s ease-in-out infinite; */
+}
+
+.js::before,
+.css::before,
+.python::before,
+.c::before,
+.html::before,
+.jquery::before,
+.docker::before,
+.bootstrap::before,
+.next::before,
+.react::before,
+.firebase::before,
+.flask::before,
+.github::before,
+.mysql::before {
+  content: '';
+  position: absolute;
+  top: -27%;
+  left: -27%;
+  right: 0;
+  bottom: 0;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.js::before {
+  background: conic-gradient(transparent, transparent, var(--yellow));
+  animation: spin 3s linear infinite;
+}
+.css::before {
+  background: conic-gradient(transparent, transparent, var(--blue));
+  animation: spin 5.5s linear infinite;
+}
+.python::before {
+  background: conic-gradient(transparent, transparent, var(--yellow), var(--blue)80%);
+  animation: spin 6s linear infinite;
+}
+.c::before {
+  background: conic-gradient(transparent, transparent, var(--blue));
+  animation: spin 4s linear infinite;
+}
+.html::before {
+  background: conic-gradient(transparent, transparent, red);
+  animation: spin 7s linear infinite;
+}
+.jquery::before {
+  background: conic-gradient(transparent, transparent, var(--blue));
+  animation: spin 6.5s linear infinite;
+}
+.docker::before {
+  background: conic-gradient(transparent, transparent, var(--blue));
+  animation: spin 7.5s linear infinite;
+}
+.bootstrap::before {
+  background: conic-gradient(transparent, transparent, rgb(155, 0, 227));
+  animation: spin 4.5s linear infinite;
+}
+.next::before {
+  background: conic-gradient(transparent, transparent, white);
+  animation: spin 6.5s linear infinite;
+}
+.react::before {
+  background: conic-gradient(transparent, transparent, rgb(54, 195, 255));
+  animation: spin 4.5s linear infinite;
+}
+.firebase::before {
+  background: conic-gradient(transparent, var(--yellow), red 80%);
+  animation: spin 7s linear infinite;
+}
+.flask::before {
+  background: conic-gradient(transparent, transparent, white);
+  animation: spin 5s linear infinite;
+}
+.github::before {
+  background: conic-gradient(transparent, transparent, white);
+  animation: spin 6s linear infinite;
+}
+.mysql::before {
+  background: conic-gradient(transparent, orange, rgb(54, 125, 196) 80%);
+  animation: spin 3.5s linear infinite;
+}
+
+.js::after,
+.css::after,
+.python::after,
+.c::after,
+.html::after,
+.jquery::after,
+.docker::after,
+.bootstrap::after,
+.next::after,
+.react::after,
+.firebase::after,
+.flask::after,
+.github::after,
+.mysql::after {
+  content: '';
+  position: absolute;
+  top: -27%;
+  left: -27%;
+  right: 0;
+  bottom: 0;
+  width: calc(120% - 1px);
+  height: calc(120% - 1px);
+  border-radius: 50%;
+  background: url('../assets/pure-black-background.jpg');
+  background-size: 1300px auto;
+  z-index: -1;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
