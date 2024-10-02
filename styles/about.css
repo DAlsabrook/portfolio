@@ -130,3 +130,18 @@
   flex-direction: column;
   align-items: center
 }
+
+/* Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Small screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Large+ screens (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {
+
+}
