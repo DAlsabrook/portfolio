@@ -1,9 +1,9 @@
 #hero {
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 130px;
 }
 
 .heroLogosTop,

@@ -74,6 +74,14 @@
   margin-bottom: 20px;
 }
 
+.downloadLink {
+  padding: 10px;
+  background-color: var(--grey);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 /* Tablet (min-width: 768px) */
 @media only screen and (min-width: 768px) {}
 
