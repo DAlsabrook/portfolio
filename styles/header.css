@@ -33,4 +33,12 @@ header {
   flex-direction: row;
   justify-content: space-around;
   width: 300px;
+  margin-left: 20px;
+}
+
+/* Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .navMenu {
+    margin-left: 0px;
+  }
 }

@@ -5,17 +5,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .aboutContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 
 .aboutPersonal {
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -24,6 +28,10 @@
   align-items: center;
   border-right: .5px solid var(--grey);
   border-top: .5px solid var(--grey);
+}
+
+.aboutPersonal>p {
+  padding: 20px;
 }
 
 .aboutPersonal img{
@@ -67,7 +75,7 @@
 }
 
 .aboutProfessional {
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -138,7 +146,17 @@
 
 /* Small screens (min-width: 1024px) */
 @media only screen and (min-width: 1024px) {
+  .aboutContent {
+    flex-direction: row;
+  }
 
+  .aboutPersonal {
+    width: 50%;
+  }
+
+  .aboutProfessional {
+    width: 50%;
+  }
 }
 
 /* Large+ screens (min-width: 1200px) */

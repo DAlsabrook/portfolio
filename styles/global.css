@@ -25,6 +25,7 @@ body {
   position: relative;
   z-index: -2;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -71,4 +72,19 @@ ol {
   justify-content: center;
   align-items: center;
   align-self: center;
+}
+
+/* Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Small screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Large+ screens (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {
+
 }

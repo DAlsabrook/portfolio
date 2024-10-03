@@ -1,5 +1,5 @@
 #hero {
-  height: 600px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
 .heroText{
   height: 130px;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -313,3 +313,20 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+.heroText{
+  font-size: 1.5rem;
+}
+
+/* Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .heroText {
+    font-size: 2rem;
+  }
+}
+
+/* Small screens (min-width: 1024px) */
+/* @media only screen and (min-width: 1024px) {} */
+
+/* Large+ screens (min-width: 1200px) */
+/* @media only screen and (min-width: 1200px) {} */

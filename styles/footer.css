@@ -19,11 +19,21 @@ footer {
 
 .footerIcon {
   color: white;
-  font-size: 24px;
+  font-size: 30px;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .footerIcon:hover {
   color: var(--blue);
-  /* Change to your desired hover color */
+  transform: translate(0, -5px) scale(1.2);
 }
+
+/* Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {}
+
+/* Small screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {}
+
+/* Large+ screens (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {}

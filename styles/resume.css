@@ -13,32 +13,40 @@
   align-self: flex-start;
   transform: translateX(-7.5px);
   transition: transform 0.3s ease;
+  margin-top: 55px;
 }
 
 .education,
 .work {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
   margin: 20px;
+}
+
+.resumeItem{
+  align-self: flex-start;
 }
 
 .resumeItem,
 .resumeItemTextDetail {
   display: flex;
-  border-left: 1px solid grey;
+  border-left: 1px solid var(--grey);
 }
 
 .resumeItemText {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-bottom: 40px;
-  margin-left: 40px;
+  margin: 40px;
+  margin-left: 10px;
   background-color: var(--black);
   border: 2px dotted var(--grey);
   border-radius: 20px;
   padding: 10px;
+  width: 100%;
 }
 
 .resumeItemText>h3 {
@@ -53,6 +61,7 @@
   width: 10px;
   transform: translateX(-5px);
   transition: transform 0.3s ease;
+  margin-top: 5px;
 }
 
 .resumeItemTextDetailText {
@@ -62,3 +71,12 @@
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
+/* Tablet (min-width: 768px) */
+@media only screen and (min-width: 768px) {}
+
+/* Small screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {}
+
+/* Large+ screens (min-width: 1200px) */
+@media only screen and (min-width: 1200px) {}
