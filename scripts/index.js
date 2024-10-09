@@ -12,4 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     topLogos.forEach(logo => logo.classList.add('animate'));
     bottomLogos.forEach(logo => logo.classList.add('animate'));
   }, 2000);
+
+  // Hamburger
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navMenu = document.querySelector('.navMenu');
+  const listItems = document.querySelectorAll('.navMenu li');
+
+  hamburgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  listItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
 });

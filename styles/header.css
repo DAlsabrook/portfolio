@@ -29,12 +29,41 @@ header {
   height: 30px;
 }
 
-.navMenu{
-  display: flex;
-  flex-direction: row;
+/* Hide the hamburger menu by default */
+.navMenu {
+  display: none;
+  flex-direction: column;
   justify-content: space-around;
-  width: 400px;
-  margin-left: 20px;
+  align-items: center;
+  height: 0;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+}
+
+.navMenu li {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navMenu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navMenu.active {
+  display: flex;
+  height: 30vh;
+  padding-bottom: 40px;
+  top: 50px;
 }
 
 .contactBtn {
@@ -62,7 +91,29 @@ header {
 
 /* Tablet (min-width: 768px) */
 @media only screen and (min-width: 768px) {
+  nav {
+    width: 75%;
+  }
+
   .navMenu {
-    margin-left: 0px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    position: static;
+    width: auto;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+/* Small screens (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+  nav {
+    width: 55%;
   }
 }
