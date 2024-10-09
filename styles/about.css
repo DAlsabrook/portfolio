@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 700px;
   height: auto;
 }
 
@@ -26,12 +27,12 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-right: .5px solid var(--grey);
-  border-top: .5px solid var(--grey);
 }
 
 .aboutPersonal>p {
   padding: 20px;
+  text-align: justify;
+  width: 90%;
 }
 
 .aboutPersonal img{
@@ -119,24 +120,32 @@
 }
 
 .displayLeft {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-right: .5px solid var(--grey);
 }
 
-.displayLeft img {
+.displayLeft img,
+.displayRight img {
   width: 40px;
   height: auto;
   margin: 5px;
+
 }
 
+.displayLeft,
 .displayRight {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.aboutLogos {
+  border-top: 1px solid grey;
+  min-width: 110px;
+  padding-top: 25px;
 }
 
 /* Tablet (min-width: 768px) */
@@ -146,17 +155,6 @@
 
 /* Small screens (min-width: 1024px) */
 @media only screen and (min-width: 1024px) {
-  .aboutContent {
-    flex-direction: row;
-  }
-
-  .aboutPersonal {
-    width: 50%;
-  }
-
-  .aboutProfessional {
-    width: 50%;
-  }
 }
 
 /* Large+ screens (min-width: 1200px) */
