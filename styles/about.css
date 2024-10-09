@@ -33,6 +33,8 @@
   padding: 20px;
   text-align: justify;
   width: 90%;
+  font-size: .8rem;
+  line-height: 1.2rem;
 }
 
 .aboutPersonal img{
@@ -87,6 +89,37 @@
   text-align: center;
 }
 
+.icon-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 150px;
+  font-size: .8rem;
+}
+
+.icon-text-container i {
+  font-size: 20rem;
+  color: var(--grey);
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.icon-text-container h2 b {
+  color: white;
+}
+.icon-text-container h2 {
+  margin: 0;
+  padding: 0;
+  color: grey;
+}
+
 .professionalDisplay {
   width: 80%;
   height: 300px;
@@ -139,7 +172,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .aboutLogos {
