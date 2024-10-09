@@ -80,6 +80,8 @@
   text-align: center;
   align-items: center;
   margin-bottom: 50px;
+  border-radius: 20px;
+  border: 1px solid orange;
 }
 
 /* Tablet (min-width: 768px) */

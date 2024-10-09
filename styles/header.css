@@ -19,6 +19,7 @@ header {
   height: 50px;
   padding: 0 20px;
 }
+
 .logo {
   margin-top: 5px;
 }
@@ -32,8 +33,31 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 300px;
+  width: 400px;
   margin-left: 20px;
+}
+
+.contactBtn {
+  background: linear-gradient(130deg, blue, blueviolet, purple, red, orange);
+  background-size: 400% 400%;
+  color: black;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 50px;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Tablet (min-width: 768px) */
