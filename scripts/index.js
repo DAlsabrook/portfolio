@@ -27,4 +27,31 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu.classList.remove('active');
     });
   });
+
+  // Animation for elements sliding in on scroll
+  const elements = document.querySelectorAll('.from_left, .from_right, .from_bottom');
+
+  const isInViewport = (el, offset = 400) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= -offset &&
+      rect.left >= -offset &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth) + offset
+    );
+  };
+
+  const runAnimations = () => {
+    elements.forEach(el => {
+      if (isInViewport(el)) {
+        el.classList.add('visible');
+      }
+    });
+  };
+
+  const body = document.querySelector('body')
+  body.addEventListener('scroll', function() {
+    runAnimations();
+  });
+  runAnimations(); // Run animations on page load
 });

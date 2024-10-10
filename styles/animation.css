@@ -1,0 +1,60 @@
+/* Keyframes for sliding animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Classes for sliding animations */
+.from_left {
+  opacity: 0;
+}
+
+.from_left.visible {
+  animation: slideInFromLeft 1.5s forwards;
+}
+
+.from_right {
+  opacity: 0;
+}
+
+.from_right.visible {
+  animation: slideInFromRight 1.5s forwards;
+}
+
+.from_bottom {
+  opacity: 0;
+}
+.from_bottom.visible {
+  animation: slideInFromBottom 1.5s forwards;
+}
