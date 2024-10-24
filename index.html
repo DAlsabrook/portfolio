@@ -22,7 +22,7 @@
   <link href="./styles/animation.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
   <header>
     <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
@@ -43,7 +43,6 @@
     </div>
   </header>
 
-  <body>
     <!-- contentWrapper prevents screen going too wide -->
     <div class="contentWrapper">
       <div class="bodyContent">
@@ -150,13 +149,24 @@
                     <img src="./assets/aicurbappeal.png" alt="gif" loading="lazy">
                   </div>
                   <h3>AI Curb Appeal (Coming)</h3>
-                  <p><em>Next.js, Firebase</em></p>
-                  <p>AICurbAppeal lets users upload photos of their house and apply customized AI models to explore various exterior design
-                  options. Operating on a subscription model, the site helps homeowners and property owners save money on costly design
-                  changes by visualizing updates before committing.</p>
+                  <p><em>Next.js, NoSQL, CSS</em></p>
+                  <p>This project does XYZ</p>
+                  <button class="details-btn" data-modal="modal1">Details</button>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h3>AI Curb Appeal (Coming)</h3>
+                  <p><em>Next.js, NoSQL, CSS</em></p>
+                  <p>AICurbAppeal lets users upload photos of their house and apply customized AI models to explore various exterior
+                    design
+                    options. Operating on a subscription model, the site helps homeowners and property owners save money on costly design
+                    changes by visualizing updates before committing.</p>
                   <p>This project has been a rewarding challenge as my first major venture with Next.js. From integrating multiple AI APIs
-                  and managing NoSQL databases to handling Stripe payments, it has pushed me to learn new technologies and adapt to the
-                  ever-evolving tech field.</p>
+                    and managing NoSQL databases to handling Stripe payments, it has pushed me to learn new technologies and adapt to the
+                    ever-evolving tech field.</p>
                 </div>
               </div>
 
@@ -176,6 +186,15 @@
                   </div>
                   <h3>TuBros Windows</h3>
                   <p><em>Next.js</em></p>
+                    <button class="details-btn" data-modal="modal2">Details</button>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h3>TuBros Windows</h3>
+                  <p><em>Next.js</em></p>
                   <p>The Synth Website was an end of the trimester school project focusing on front end technologies. My partner and I
                     wanted to dive into the world of 3D. This site set the user in a 3 dimentional cabin with a lone and fully funtional
                     synthesizer on a table looking out of a window to a mountain landscape. The user can create and loop synth sequences
@@ -189,10 +208,10 @@
                     ever-evolving tech field.</p>
                 </div>
               </div>
-
             </div>
 
             <div class="projectSet">
+
               <div class="projectWrapper from_right">
                 <div class="projectContainer">
                   <div class="project">
@@ -209,22 +228,28 @@
                   </div>
                   <h3>The Synth Website</h3>
                   <p><em>HTML, CSS, JavaScript, Three.js</em></p>
+                  <button class="details-btn" data-modal="modal3">Details</button>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h3>The Synth Website</h3>
+                  <p><em>HTML, CSS, JavaScript, Three.js</em></p>
                   <p>
                   <p>The Synth Website was an end of trimester project focused on front-end technologies, where my partner and I
-                    explored
-                    3D design. The site places users in a cabin with a functional synthesizer on a table, overlooking a mountain
-                    landscape. Users
-                    can create and loop synth sequences alongside a drum pad with instruments like kick drum, hi-hat, and snare. A
-                    dropdown menu
-                    lets users modify the outdoor scene, adding snow or rain and switching from daylight to an amber evening.</p>
+                    explored 3D design. The site places users in a cabin with a functional synthesizer on a table, overlooking a mountain
+                    landscape. Users can create and loop synth sequences alongside a drum pad with instruments like kick drum, hi-hat, and snare. A
+                    dropdown menu lets users modify the outdoor scene, adding snow or rain and switching from daylight to an amber evening.</p>
                   </p>
                   <p>The steep learning curve of this project centered around using libraries like Three.js and Tone.js to build the 3D
                     environment and make the objects functional. While load times can sometimes feel like waiting for dial-up, I’m
                     thrilled
-                    with how the site turned out. The unique challenges pushed us to think creatively.</p>
+                    with how the site turned out. The unique challenges pushed us to think creatively.
+                  </p>
                 </div>
               </div>
-
 
               <div class="projectWrapper from_right">
                 <div class="projectContainer">
@@ -242,13 +267,23 @@
                   </div>
                   <h3>This Portfolio Site</h3>
                   <p><em>HTML, CSS, JavaScript</em></p>
-                  <p>DavidAlsabrook.com will showcase the exciting projects I’m currently working on and those I’ve completed. It’s a
-                    space where employers and colleagues can stay updated on my latest ventures and developments.</p>
-                  <p>This project has been a deep dive into all things CSS. With only about 15 lines of JavaScript, it’s amazing to see
-                    what can be accomplished with CSS alone. I wanted to return to the basics, building this site as a minimalist HTML and CSS project.</p>
+                  <button class="details-btn" data-modal="modal4">Details</button>
                 </div>
               </div>
-
+              <!-- Modal Structure -->
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                <h3>This Portfolio Site</h3>
+                <p><em>HTML, CSS, JavaScript</em></p>
+                <p>DavidAlsabrook.com will showcase the exciting projects I’m currently working on and those I’ve completed. It’s a
+                  space where employers and colleagues can stay updated on my latest ventures and developments.</p>
+                <p>This project has been a deep dive into all things CSS. With only about 15 lines of JavaScript, it’s amazing to see
+                  what can be accomplished with CSS alone. I wanted to return to the basics, building this site as a minimalist HTML and
+                  CSS project.
+                </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -332,7 +367,7 @@
         </section>
       </div>
     </div>
-  </body>
+
 
   <footer id="footer">
     <!-- contentWrapper prevents screen going too wide -->

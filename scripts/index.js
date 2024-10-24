@@ -54,4 +54,50 @@ document.addEventListener('DOMContentLoaded', () => {
     runAnimations();
   });
   runAnimations(); // Run animations on page load
+
+
+  // logic for modals of projects details
+  // Get all the details buttons
+  const detailsButtons = document.querySelectorAll('.details-btn');
+
+  // Add click event to each button
+  detailsButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modalId = button.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        // Capture the user's scroll position
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(scrollTop)
+        modal.style.top = `${scrollTop}px`;
+        modal.style.display = 'block';
+        document.body.classList.add('modal-open'); // Disable scrolling
+      }
+    });
+  });
+
+  // Get all the close buttons
+  const closeButtons = document.querySelectorAll('.close-btn');
+
+  // Add click event to each close button
+  closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const modal = button.closest('.modal');
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open'); // Enable scrolling
+      }
+    });
+  });
+
+  // Close the modal when clicking outside of it
+  window.addEventListener('click', (event) => {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open'); // Enable scrolling
+      }
+    });
+  });
 });

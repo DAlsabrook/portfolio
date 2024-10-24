@@ -145,6 +145,57 @@
   /* Color for maximize button */
 }
 
+/* Modal styles */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black w/ opacity */
+}
+
+/* Disable scrolling when modal is open this class is added to the body*/
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: var(--grey-background);
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 50%;
+  /* Could be more or less, depending on screen size */
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.details-btn {
+  cursor: pointer;
+}
+
 /* Tablet (min-width: 768px) */
 @media only screen and (min-width: 768px) {}
 
