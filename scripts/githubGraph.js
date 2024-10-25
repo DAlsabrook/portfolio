@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   async function getGitHubContributions() {
     try {
-      const octokit = new Octokit({ auth: env.githubToken });
+      const octokit = new Octokit({ auth: context.env.githubToken });
       const userContDiv = document.getElementById('user-contribution');
       const today = new Date().toISOString();
       const lastYear = new Date(new Date().setFullYear(new Date().getFullYear() - 1)).toISOString();
