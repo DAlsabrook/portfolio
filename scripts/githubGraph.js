@@ -33,34 +33,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   async function getGitHubContributions() {
     try {
-      const token = context.env.githubToken;
-      if (!token) console.log('No Token');
-      const octokit = new Octokit({ auth: context.env.githubToken });
       const userContDiv = document.getElementById('user-contribution');
-      const today = new Date().toISOString();
-      const lastYear = new Date(new Date().setFullYear(new Date().getFullYear() - 1)).toISOString();
 
-      const query = `
-        query ($username: String!, $from: DateTime!, $to: DateTime!) {
-          user(login: $username) {
-            contributionsCollection(from: $from, to: $to) {
-              contributionCalendar {
-                weeks {
-                  contributionDays {
-                    date
-                    contributionCount
-                    color
-                  }
-                }
-              }
-            }
-          }
+      const response = await fetch('https://portfolio-worker.dfalsabrook.workers.dev/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         }
-      `;
+      });
 
-      const variables = { username, from: lastYear, to: today };
-      const response = await octokit.graphql(query, variables);
-      const weeks = response.user.contributionsCollection.contributionCalendar.weeks;
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} ${response.statusText}`);
+      }
+
+      const responseData = await response.json();
+      const weeks = responseData.data.user.contributionsCollection.contributionCalendar.weeks;
       let ucount = 0;
 
       weeks.forEach(week => {
@@ -68,10 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const contributionCount = day.contributionCount;
           const square = document.createElement('li');
           square.dataset.level = contributionCount;
-          // square.style.backgroundColor = day.color;
-          // Set the default color to black (no contributions)
-          // Increase the green component as contributions increase
-          const greenIntensity = Math.min(255, contributionCount * 20); // Adjust multiplier as needed
+          const greenIntensity = Math.min(255, contributionCount * 25); // Adjust multiplier as needed
           square.style.backgroundColor = `rgb(0, ${greenIntensity}, 0)`;
 
           squares.appendChild(square);
