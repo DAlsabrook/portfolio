@@ -168,14 +168,42 @@
 }
 
 .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--grey-background);
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  height: 50%;
   /* Could be more or less, depending on screen size */
+}
+
+.modal-content>button {
+  border-bottom: 1px solid orange;
+  margin-bottom: 30px;
+}
+
+.modalImg {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 40px 0;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.modalImg>img {
+  width: 85%;
+  height: auto;
+  min-width: 200px;
+  margin-bottom: 20px;
+  border-radius: 30px;
 }
 
 .close-btn {
@@ -183,6 +211,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  align-self: flex-end;
 }
 
 .close-btn:hover,
