@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   async function getGitHubContributions() {
     try {
+      const token = context.env.githubToken;
+      if (!token) console.log('No Token');
       const octokit = new Octokit({ auth: context.env.githubToken });
       const userContDiv = document.getElementById('user-contribution');
       const today = new Date().toISOString();
