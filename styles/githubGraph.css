@@ -1,0 +1,48 @@
+/* Add your CSS styles here */
+
+.githubGraph {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 50px 0;
+  justify-content: center;
+}
+#user-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profile-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-stat {
+  display: flex;
+  align-items: center;
+}
+
+#user-contribution {
+  text-align: center;
+}
+
+.bottom-icons {
+  margin-right: 5px;
+}
+
+.squares {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.squares li {
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}
+

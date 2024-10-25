@@ -10,6 +10,11 @@
   <link rel="icon" type="image/x-icon" href="./assets/logo.ico">
   <!-- Include Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Github graph script -->
+  <script type="module">
+    import { Octokit, App } from "https://esm.sh/octokit";
+  </script>
+  <script type="module" src="./scripts/githubGraph.js"></script>
   <!-- Css Files -->
   <link href="./styles/global.css" rel="stylesheet">
   <link href="./styles/header.css" rel="stylesheet">
@@ -20,6 +25,7 @@
   <link href="./styles/footer.css" rel="stylesheet">
   <link href="./styles/hover.css" rel="stylesheet">
   <link href="./styles/animation.css" rel="stylesheet">
+  <link href="./styles/githubGraph.css" rel="stylesheet">
 </head>
 
 <body id="body">
@@ -366,6 +372,11 @@
               </div>
             </div>
           </div>
+          <div class="githubGraph">
+            <div id="user-info"></div>
+            <ul class="squares"></ul>
+            <div id="user-contribution"></div>
+          </div>
         </section>
 
         <section id="resume">
@@ -477,6 +488,7 @@
 
   <!-- Import JavaScript file -->
   <script src="./scripts/index.js"></script>
+
 </body>
 
 </html>
