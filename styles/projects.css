@@ -162,6 +162,9 @@
   /* Black w/ opacity */
 }
 
+.modal h3 {
+  font-size: 2rem;
+}
 /* Disable scrolling when modal is open this class is added to the body*/
 .modal-open {
   overflow: hidden;

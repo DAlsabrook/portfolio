@@ -39,7 +39,8 @@ html {
 html,
 body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   background-color: var(--black);
   color: white;
   position: relative;
