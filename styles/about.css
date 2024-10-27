@@ -178,6 +178,12 @@
   border-right: .5px solid var(--grey);
 }
 
+.displayLeft p,
+.displayRight p {
+  font-size: .8rem;
+  color: grey;
+}
+
 .displayLeft img,
 .displayRight img {
   width: 40px;
@@ -194,7 +200,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .aboutLogos {
