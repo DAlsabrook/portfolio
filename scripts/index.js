@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (modal) {
         // Capture the user's scroll position
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        console.log(scrollTop)
         modal.style.top = `${scrollTop}px`;
         modal.style.display = 'block';
         document.body.classList.add('modal-open'); // Disable scrolling
