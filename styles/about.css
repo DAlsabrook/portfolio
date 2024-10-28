@@ -143,8 +143,8 @@
 }
 
 .professionalDisplay {
-  width: 80%;
-  height: 300px;
+  width: 90%;
+  height: auto;
   position: relative;
   /* Ensure the pseudo-element is positioned relative to this element */
   display: flex;
@@ -182,6 +182,7 @@
 .displayRight p {
   font-size: .8rem;
   color: grey;
+  margin: 10px 0;
 }
 
 .displayLeft img,
@@ -199,7 +200,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
+  padding: 30px 10px;
   font-size: 1.3rem;
 }
 

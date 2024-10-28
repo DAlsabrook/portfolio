@@ -178,9 +178,9 @@
   background-color: var(--grey-background);
   margin: 15% auto;
   /* 15% from the top and centered */
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   /* Could be more or less, depending on screen size */
 }
 
@@ -189,20 +189,24 @@
   margin-bottom: 30px;
 }
 
+.modal-content>p {
+  color: grey;
+}
+
 .modalImg {
-  width: 80%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 40px 0;
+  margin: 20px 0;
   background-color: black;
   border-radius: 30px;
 }
 
 .modalImg>img {
-  width: 85%;
+  width: 95%;
   height: auto;
   min-width: 200px;
   margin-bottom: 20px;
@@ -239,6 +243,14 @@
 
     .projectSet {
       width: 50%;
+    }
+
+    .modal-content {
+      width: 90%;
+    }
+
+    .modalImg>img {
+      width: 85%;
     }
 }
 
