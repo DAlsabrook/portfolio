@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
   body.addEventListener('scroll', function() {
     runAnimations();
   });
-  runAnimations(); // Run animations on page load
+  runAnimations(); // Run animations on page load to activate hero elements
 
 
-  // logic for modals of projects details
+  // Logic for modals of projects details
   // Get all the details buttons
   const detailsButtons = document.querySelectorAll('.details-btn');
 
